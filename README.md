@@ -1,6 +1,6 @@
-# Node starter w/ Authentication (Express, TypeScript)
+# Fake server for cookie-based authentication (educational only)
 
-> A starter template for demo or instructional purposes.
+> A starter template for demo or educational purposes.
 
 ## Features
 
