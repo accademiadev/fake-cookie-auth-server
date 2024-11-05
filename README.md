@@ -19,11 +19,10 @@
 - express-session (for sessions)
 - session-file-store (for saving session information on disk)
 - passport, passport-local (for authentication)
-- NeDB (MongoDB alternative, saves on disk, no setup required)
 
 ## Get started
 
-Make sure to add a `.env` file at the root of the project, with these fields:
+Make sure to add a `.env` file at the root of the project, with these fields, otherwise defaults will be used:
 
 ```
 PORT=...
@@ -31,11 +30,11 @@ APP_SECRET=...
 FRONTEND_URL=...
 ```
 
-- `PORT` specifies on which port should Node start
-- `APP_SECRET` is a random secret value, used for sessions
-- `FRONTEND_URL` is the URL of your frontend, needed for CORS (`Access-Control-Allow-Credentials`)
+- `PORT` specifies on which port should Node start (default: 3000)
+- `APP_SECRET` is a random secret value, used for sessions (default: supersecret)
+- `FRONTEND_URL` is the URL of your frontend, needed for CORS (default: http://localhost:4200)
 
-Get started by running `npm run dev` (dev mode, hot reloading) or `npm start` (build).
+Get started by running `npm run dev` (dev mode, hot reloading).
 
 ## How to authenticate
 
